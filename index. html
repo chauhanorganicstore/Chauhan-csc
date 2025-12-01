@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="hi">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Chauhan Online Service Center</title>
+  <style>
+    :root{--accent:#2b9348;--muted:#666;}
+    body{font-family:Arial;background:#fff;margin:0;padding:0;color:#111}
+    header{background:#e9f7ec;border-bottom:3px solid var(--accent);padding:15px}
+    h1{margin:0;color:#c62828;font-size:22px}
+    .sub{color:var(--muted);font-size:13px;margin-top:4px}
+    .container{padding:15px}
+    h2{color:var(--accent);margin-top:20px}
+    ul{margin-left:18px;margin-top:8px}
+    .cta{display:inline-block;padding:10px;background:var(--accent);color:#fff;text-decoration:none;border-radius:6px;margin-top:8px}
+    footer{text-align:center;padding:10px;color:var(--muted);font-size:12px;margin-top:20px}
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>CHAUHAN ONLINE SERVICE CENTER</h1>
+  <div class="sub">CSC • BC Agent • Distributor — Since 2021</div>
+</header>
+
+<div class="container">
+
+<h2>हम कौन हैं</h2>
+<p><b>Name:</b> Vijay Chauhan<br>
+<b>Address:</b> Shop No–1, Tiraha Sherpur Khelmau, Jhabrera, Roorkee, Haridwar, Uttarakhand – 247665<br>
+<b>Mobile:</b> 9306328256<br>
+<b>WhatsApp:</b> 7818945749<br>
+<b>Email:</b> vijaychauhan200104@gmail.com<br>
+<b>Roles:</b> CSC VLE • BC Agent • Distributor</p>
+
+<h2>हमारी सेवाएँ</h2>
+<ul>
+  <li>Aadhaar update / enrolment assist</li>
+  <li>AEPS / MATM / Cash withdrawal</li>
+  <li>BBPS Bill Payments</li>
+  <li>PAN / Udyam / GST help</li>
+  <li>Ayushman / PM Kisan / Govt Schemes</li>
+  <li>Certificates – Income, Caste, Birth, Death</li>
+  <li>Photocopy, Print, Lamination</li>
+</ul>
+
+<h2>Legal Verification</h2>
+<p><b>BC Agent Code:</b> PANVC001<br>
+<b>PAN:</b> CAGPV4936A<br>
+<b>Bank Account (BC):</b> 54320100004021 (Bank of Baroda)<br>
+<b>TDS Exemption:</b> u/s 194N (2025–26)</p>
+
+<h2>लोकेशन</h2>
+<p><a href="https://maps.app.goo.gl/Y9a4VaQxhzAXoKUR9" target="_blank">Google Map पर देखें</a></p>
+
+<h2>संपर्क करें</h2>
+<a class="cta" href="https://wa.me/917818945749?text=Hello%20CSC">WhatsApp पर संपर्क करें</a><br><br>
+<b>Email:</b> vijaychauhan200104@gmail.com
+
+</div>
+
+<footer>
+© Chauhan Online Service Center — 2021 to 2025
+</footer>
+
+</body>
+</html>
