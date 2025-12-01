@@ -3,66 +3,188 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Chauhan Online Service Center</title>
+  <title>Chauhan Online Service Center — CSC • BC • Distributor</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Noto+Sans+Devanagari:wght@400;700&display=swap" rel="stylesheet">
   <style>
-    :root{--accent:#2b9348;--muted:#666;}
-    body{font-family:Arial;background:#fff;margin:0;padding:0;color:#111}
-    header{background:#e9f7ec;border-bottom:3px solid var(--accent);padding:15px}
-    h1{margin:0;color:#c62828;font-size:22px}
-    .sub{color:var(--muted);font-size:13px;margin-top:4px}
-    .container{padding:15px}
-    h2{color:var(--accent);margin-top:20px}
-    ul{margin-left:18px;margin-top:8px}
-    .cta{display:inline-block;padding:10px;background:var(--accent);color:#fff;text-decoration:none;border-radius:6px;margin-top:8px}
-    footer{text-align:center;padding:10px;color:var(--muted);font-size:12px;margin-top:20px}
+    :root{
+      --accent:#1e8f3e;
+      --accent-2:#176f2d;
+      --bg:#ffffff;
+      --muted:#6b7280;
+      --card:#fbfff9;
+      --maxw:1100px;
+    }
+    *{box-sizing:border-box}
+    body{margin:0;font-family:Inter, 'Noto Sans Devanagari', Arial, sans-serif;background:var(--bg);color:#111}
+    a{color:inherit;text-decoration:none}
+    .wrap{max-width:var(--maxw);margin:0 auto;padding:0 16px}
+
+    /* header / hero */
+    header{background:linear-gradient(0deg,#f2fbf2,white);padding:18px 0;border-bottom:4px solid rgba(30,143,62,0.12)}
+    .brand{display:flex;align-items:center;gap:12px}
+    .logo{width:60px;height:60px;border-radius:12px;background:linear-gradient(135deg,#dff7df,#cceecc);display:flex;align-items:center;justify-content:center;font-weight:800;color:var(--accent-2)}
+    h1{margin:0;font-size:20px;color:#c62828}
+    .subtitle{color:var(--muted);font-size:13px;margin-top:4px}
+
+    .hero{display:flex;flex-direction:column;gap:12px;padding:16px 0}
+    @media(min-width:900px){ .hero{flex-direction:row;align-items:center} }
+
+    .hero-left{flex:1}
+    .hero-cta{display:flex;gap:10px;align-items:center;margin-top:8px}
+    .btn{background:var(--accent);color:#fff;padding:12px 14px;border-radius:10px;font-weight:700;display:inline-flex;align-items:center;gap:8px;box-shadow:0 10px 24px rgba(30,143,62,0.12)}
+    .btn.ghost{background:transparent;border:2px solid rgba(30,143,62,0.12);color:var(--accent);font-weight:700}
+
+    /* main layout */
+    main{max-width:var(--maxw);margin:14px auto;padding:0 16px}
+    .grid{display:grid;grid-template-columns:1fr;gap:18px}
+    @media(min-width:900px){ .grid{grid-template-columns:2fr 1fr} }
+
+    .card{background:var(--card);padding:16px;border-radius:12px;box-shadow:0 8px 22px rgba(12,12,12,0.03)}
+    h2{color:var(--accent);margin:0 0 10px 0}
+    ul.services{padding-left:18px;margin:8px 0}
+    ul.services li{margin:8px 0;font-weight:600}
+
+    .services-grid{display:grid;grid-template-columns:1fr;gap:12px;margin-top:8px}
+    @media(min-width:700px){ .services-grid{grid-template-columns:repeat(2,1fr)} }
+    .service-card{background:#fff;padding:12px;border-radius:10px;border:1px solid rgba(0,0,0,0.04);display:flex;gap:12px;align-items:flex-start}
+    .s-badge{width:46px;height:46px;border-radius:10px;background:linear-gradient(135deg,#e8fbeb,#d5f7d9);display:flex;align-items:center;justify-content:center;font-weight:800;color:var(--accent-2)}
+
+    /* right column */
+    .contact-card{position:sticky;top:18px}
+    .meta{font-size:14px;color:var(--muted)}
+    .quick-links{display:flex;flex-direction:column;gap:8px;margin-top:10px}
+
+    footer{max-width:var(--maxw);margin:28px auto;padding:18px 16px;color:var(--muted);font-size:13px}
+
+    /* WhatsApp fixed button */
+    .whatsapp-fixed{position:fixed;right:16px;bottom:16px;z-index:999}
+    .whatsapp-btn{
+      display:inline-flex;align-items:center;gap:10px;padding:12px 16px;border-radius:50px;background:#25D366;color:#fff;font-weight:800;box-shadow:0 18px 40px rgba(37,211,102,0.18);
+      transform:translateY(0);transition:transform .18s ease;
+    }
+    .whatsapp-btn:active{transform:translateY(2px)}
+    .pulse{position: absolute;right:8px;bottom:8px;width:56px;height:56px;border-radius:50%;background:rgba(37,211,102,0.14);animation:pulse 1.8s infinite}
+    @keyframes pulse{0%{transform:scale(.8);opacity:.9}50%{transform:scale(1.5);opacity:.18}100%{transform:scale(.8);opacity:.9}}
+
+    .top-note{background:linear-gradient(90deg,#fff9ec,#f1fff0);padding:8px;border-radius:10px;border:1px solid rgba(0,0,0,0.03);font-weight:600;margin-bottom:12px;color:var(--muted)}
   </style>
 </head>
 <body>
 
 <header>
-  <h1>CHAUHAN ONLINE SERVICE CENTER</h1>
-  <div class="sub">CSC • BC Agent • Distributor — Since 2021</div>
+  <div class="wrap" style="display:flex;align-items:center;justify-content:space-between">
+    <div style="display:flex;align-items:center;gap:12px">
+      <div class="logo">CO</div>
+      <div>
+        <h1>CHAUHAN ONLINE SERVICE CENTER</h1>
+        <div class="subtitle">CSC • BC Agent • Distributor — Since 2021</div>
+      </div>
+    </div>
+    <div style="display:flex;gap:10px;align-items:center">
+      <a class="btn" href="https://wa.me/917818945749?text=Hello%20Chauhan%20CSC%2C%20I%20need%20help%20with%20your%20services" target="_blank">WhatsApp • 7818945749</a>
+      <a class="btn ghost" href="tel:+919306328256">Call 9306328256</a>
+    </div>
+  </div>
 </header>
 
-<div class="container">
+<main class="wrap">
+  <div class="top-note">Trusted at village level • Distributor & CSC VLE • Open Mon–Sat: 9:30–19:30</div>
 
-<h2>हम कौन हैं</h2>
-<p><b>Name:</b> Vijay Chauhan<br>
-<b>Address:</b> Shop No–1, Tiraha Sherpur Khelmau, Jhabrera, Roorkee, Haridwar, Uttarakhand – 247665<br>
-<b>Mobile:</b> 9306328256<br>
-<b>WhatsApp:</b> 7818945749<br>
-<b>Email:</b> vijaychauhan200104@gmail.com<br>
-<b>Roles:</b> CSC VLE • BC Agent • Distributor</p>
+  <div class="grid">
+    <!-- left -->
+    <section>
+      <div class="card">
+        <h2>हम कौन हैं</h2>
+        <p style="margin:6px 0;"><b>Name:</b> Vijay Chauhan</p>
+        <p style="margin:6px 0;"><b>Address:</b> Shop No–1, Tiraha Sherpur Khelmau, Jhabrera, Roorkee, Haridwar, Uttarakhand – 247665</p>
+        <p style="margin:6px 0;"><b>Mobile:</b> <a href="tel:+919306328256">9306328256</a></p>
+        <p style="margin:6px 0;"><b>WhatsApp:</b> <a href="https://wa.me/917818945749?text=Hello%20Chauhan%20CSC%2C%20I%20need%20help%20with%20your%20services" target="_blank">7818945749</a></p>
+        <p style="margin:6px 0;"><b>Email:</b> <a href="mailto:vijaychauhan200104@gmail.com">vijaychauhan200104@gmail.com</a></p>
 
-<h2>हमारी सेवाएँ</h2>
-<ul>
-  <li>Aadhaar update / enrolment assist</li>
-  <li>AEPS / MATM / Cash withdrawal</li>
-  <li>BBPS Bill Payments</li>
-  <li>PAN / Udyam / GST help</li>
-  <li>Ayushman / PM Kisan / Govt Schemes</li>
-  <li>Certificates – Income, Caste, Birth, Death</li>
-  <li>Photocopy, Print, Lamination</li>
-</ul>
+        <h2 style="margin-top:14px">हमारी सेवाएँ</h2>
+        <ul class="services">
+          <li>Aadhaar update / enrollment assist</li>
+          <li>AEPS / MATM / Cash withdrawal</li>
+          <li>BBPS Bill Payments</li>
+          <li>PAN / Udyam / GST help</li>
+          <li>Ayushman / PM Kisan / Govt Schemes</li>
+          <li>Certificates – Income, Caste, Birth, Death</li>
+          <li>Photocopy, Print, Lamination</li>
+        </ul>
+      </div>
 
-<h2>Legal Verification</h2>
-<p><b>BC Agent Code:</b> PANVC001<br>
-<b>PAN:</b> CAGPV4936A<br>
-<b>Bank Account (BC):</b> 54320100004021 (Bank of Baroda)<br>
-<b>TDS Exemption:</b> u/s 194N (2025–26)</p>
+      <div class="card" style="margin-top:14px">
+        <h2>Quick Services</h2>
+        <div class="services-grid">
+          <div class="service-card"><div class="s-badge">A</div><div><b>Aadhaar</b><div class="meta">Update & enrollment</div></div></div>
+          <div class="service-card"><div class="s-badge">B</div><div><b>AEPS</b><div class="meta">Cash withdrawal & banking</div></div></div>
+          <div class="service-card"><div class="s-badge">P</div><div><b>Payments</b><div class="meta">Bills, Mobile, DTH</div></div></div>
+          <div class="service-card"><div class="s-badge">D</div><div><b>Documents</b><div class="meta">PAN, Udyam, Certificates</div></div></div>
+        </div>
+      </div>
 
-<h2>लोकेशन</h2>
-<p><a href="https://maps.app.goo.gl/Y9a4VaQxhzAXoKUR9" target="_blank">Google Map पर देखें</a></p>
+      <div class="card" style="margin-top:14px">
+        <h2>Legal Verification</h2>
+        <p><b>BC Agent Code:</b> PANVC001</p>
+        <p><b>PAN:</b> CAGPV4936A</p>
+        <p><b>Bank Account (BC):</b> 54320100004021 (Bank of Baroda)</p>
+      </div>
+    </section>
 
-<h2>संपर्क करें</h2>
-<a class="cta" href="https://wa.me/917818945749?text=Hello%20CSC">WhatsApp पर संपर्क करें</a><br><br>
-<b>Email:</b> vijaychauhan200104@gmail.com
+    <!-- right -->
+    <aside>
+      <div class="card contact-card">
+        <div style="display:flex;gap:10px;align-items:center;margin-bottom:12px">
+          <div class="logo" style="width:54px;height:54px;font-size:16px">CO</div>
+          <div>
+            <div style="font-weight:800">Chauhan Online Service Center</div>
+            <div class="meta">Shop No–1, Tiraha Sherpur Khelmau, Jhabrera</div>
+          </div>
+        </div>
 
-</div>
+        <div style="margin-top:8px">
+          <div style="font-weight:700">Office Hours</div>
+          <div class="meta">Mon–Sat: 9:30 AM – 7:30 PM</div>
+        </div>
+
+        <div class="quick-links">
+          <a class="btn" href="https://wa.me/917818945749?text=Hello%20Chauhan%20CSC%2C%20I%20need%20help%20with%20your%20services" target="_blank">WhatsApp • 7818945749</a>
+          <a class="btn ghost" href="https://maps.app.goo.gl/Y9a4VaQxhzAXoKUR9" target="_blank">Get Directions</a>
+          <a class="btn ghost" href="mailto:vijaychauhan200104@gmail.com">Email Us</a>
+        </div>
+      </div>
+
+      <div class="card" style="margin-top:12px">
+        <h2>Location</h2>
+        <div style="width:100%;height:180px;border-radius:8px;overflow:hidden;background:#eee">
+          <iframe src="https://www.google.com/maps?q=29.863,77.888&z=15&output=embed" width="100%" height="100%" style="border:0" loading="lazy"></iframe>
+        </div>
+      </div>
+    </aside>
+  </div>
+</main>
 
 <footer>
-© Chauhan Online Service Center — 2021 to 2025
+  <div class="wrap">
+    <div style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:10px">
+      <div>© Chauhan Online Service Center — 2021–2025</div>
+      <div class="meta">Trusted village-level services • Roorkee, Uttarakhand</div>
+    </div>
+  </div>
 </footer>
+
+<!-- Floating WhatsApp -->
+<div class="whatsapp-fixed" aria-hidden>
+  <!-- Pre-filled message URL (change text after %20 if you want custom) -->
+  <a class="whatsapp-btn" href="https://wa.me/917818945749?text=Hello%20Chauhan%20CSC%2C%20I%20need%20help%20with%20your%20services" target="_blank" rel="noopener">
+    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" style="margin-left:4px">
+      <path d="M20.52 3.48A11.86 11.86 0 0 0 12 0C5.373 0 0 5.373 0 12c0 2.115.555 4.18 1.61 6.003L0 24l6.14-1.6A11.88 11.88 0 0 0 12 24c6.627 0 12-5.373 12-12 0-2.958-1.144-5.67-3.48-7.52z" fill="#fff"/>
+      <path d="M17.1 14.2c-.26-.13-1.52-.74-1.76-.82-.24-.08-.42-.13-.6.13-.18.26-.72.82-.88.99-.16.16-.33.18-.61.06-.28-.12-1.17-.43-2.22-1.37-.82-.73-1.37-1.63-1.53-1.91-.16-.28-.02-.43.12-.55.12-.12.26-.33.38-.5.12-.16.16-.28.26-.46.08-.18.04-.33-.02-.46-.06-.13-.6-1.44-.82-1.98-.22-.53-.45-.45-.62-.46-.16 0-.35-.02-.54-.02-.18 0-.46.06-.7.33-.24.26-.92.9-.92 2.2 0 1.29.94 2.54 1.07 2.72.12.18 1.85 2.9 4.5 3.95 3.13 1.28 3.13.85 3.69.8.57-.06 1.76-.72 2.01-1.41.25-.69.25-1.28.17-1.4-.08-.12-.25-.18-.52-.3z" fill="#25D366"/>
+    </svg>
+    WhatsApp • 7818945749
+  </a>
+  <div class="pulse" style="right:14px;bottom:14px"></div>
+</div>
 
 </body>
 </html>
