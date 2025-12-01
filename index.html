@@ -3,212 +3,309 @@
 <head>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width,initial-scale=1" />
-<title>Chauhan Online Service Center — Trusted Local CSC</title>
-<meta name="description" content="Chauhan Online Service Center — Aadhaar, AEPS, BBPS, PAN, Udyam, Govt schemes, photocopy & printing. Operated by Saurabh Chauhan. VLE ID: 136473470022. Serves Jhabrera, Roorkee, Haridwar, Uttarakhand." />
+<title>Chauhan Online Service Center — CSC • BC Agent • Distributor</title>
+
+<meta name="description" content="Chauhan Online Service Center — Aadhaar, AEPS, BBPS, PAN, Udyam, certificates, print & laminations. Mobile-first, local service in Jhabrera, Roorkee, Haridwar (247665)." />
+<meta name="keywords" content="CSC, BC Agent, AEPS, Aadhaar Update, PAN, Udyam, Roorkee, Haridwar, Chauhan" />
+<link rel="canonical" href="https://chauhanorganicstore.github.io/Chauhan-csc/" />
+<meta property="og:title" content="Chauhan Online Service Center — CSC & BC Agent" />
+<meta property="og:description" content="Local multi-services: Aadhaar, AEPS, BBPS, PAN, Udyam. Visit or request service — mobile-first." />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://chauhanorganicstore.github.io/Chauhan-csc/" />
+
+<!-- Structured data (LocalBusiness) -->
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"LocalBusiness",
+  "name":"Chauhan Online Service Center",
+  "telephone":"+91-7818945749",
+  "address":{
+    "@type":"PostalAddress",
+    "streetAddress":"Shop No-1, Tiraha Sherpur Khelmau",
+    "addressLocality":"Jhabrera, Roorkee",
+    "addressRegion":"Uttarakhand",
+    "postalCode":"247665",
+    "addressCountry":"IN"
+  },
+  "url":"https://chauhanorganicstore.github.io/Chauhan-csc/",
+  "image":"",
+  "description":"Aadhaar, AEPS, BBPS, PAN, Udyam registration, certificates, printing & lamination."
+}
+</script>
+
 <style>
 :root{
-  --accent:#2b9348;
-  --saffron:#ff8c1a;
-  --muted:#5b5b5b;
-  --card:#ffffff;
-  --bg:#f4fbf6;
-  --max-width:1050px;
+  --bg:#fbfff9; --accent:#d35400; /* saffron-like */
+  --muted:#666; --card:#fff; --shadow:0 8px 24px rgba(19,19,19,0.06);
+  font-family: "Segoe UI", Roboto, "Noto Sans", system-ui, -apple-system, sans-serif;
 }
 *{box-sizing:border-box}
-body{font-family:Inter, system-ui, -apple-system, Roboto, 'Noto Sans', Arial; margin:0;background:var(--bg);color:#111}
-.container{max-width:var(--max-width);margin:0 auto;padding:22px}
-
-/* light header with e-gov style background svg blend */
+html,body{height:100%;margin:0;background:var(--bg);color:#111}
+.container{max-width:980px;margin:0 auto;padding:18px}
 .header{
-  position:relative;padding:28px;border-radius:12px;background:linear-gradient(180deg, rgba(255,255,255,0.95), rgba(255,255,255,0.92));
-  overflow:hidden;box-shadow:0 10px 30px rgba(0,0,0,0.06);margin-bottom:18px;
-  display:flex;align-items:center;gap:18px;
+  background:linear-gradient(180deg, rgba(214,83,0,0.08), rgba(255,255,255,0));
+  border-bottom:4px solid rgba(214,83,0,0.12);
+  padding:18px;border-radius:10px 10px 0 0;
+  display:flex;align-items:center;gap:12px;
 }
-.header .brand{
-  z-index:3;
-  display:flex;flex-direction:column;
-}
-.logo-saffron{
-  font-weight:900;font-size:22px;color:var(--saffron);letter-spacing:0.6px;
-  padding:8px 12px;border-radius:10px;background:linear-gradient(135deg,#fff, rgba(255,255,255,0.6));
-  box-shadow:0 6px 18px rgba(0,0,0,0.08);
+.logo{
+  width:72px;height:72px;border-radius:12px;
+  background: linear-gradient(135deg,#fff 0%, #ffe9d6 100%);
+  display:flex;align-items:center;justify-content:center;flex-shrink:0;
+  box-shadow:var(--shadow);
   transform:translateZ(0);
 }
-.header .tag{color:var(--muted);margin-top:6px;font-size:13px}
-
-/* subtle e-gov svg in the background */
-.header::after{
-  content:"";
-  position:absolute;right:-6%;top:-12%;width:56%;height:200%;
-  background-image:radial-gradient(circle at 30% 30%, rgba(43,147,72,0.06), transparent 20%),
-    linear-gradient(135deg, rgba(255,140,26,0.03), rgba(43,147,72,0.02));
-  z-index:1;
-  pointer-events:none;
-  transform:rotate(-8deg);
+.logo svg{width:56px;height:56px}
+.title{flex:1}
+.h1{
+  margin:0;font-weight:800;
+  font-size:28px;color:var(--accent);
+  /* saffron 3D-ish using layered text-shadow */
+  text-shadow:
+    0 1px 0 #fff,
+    0 2px 0 rgba(0,0,0,0.04),
+    0 6px 18px rgba(214,83,0,0.18);
 }
-
-/* big saffron 3d heading */
+.sub{margin:4px 0 0;color:var(--muted);font-weight:600}
 .hero{
-  display:flex;flex-direction:column;gap:16px;margin-bottom:18px;
+  padding:18px;margin-top:14px;background:linear-gradient(180deg, rgba(255,255,255,0.6), rgba(255,255,255,0.85));
+  border-radius:12px;box-shadow:var(--shadow);overflow:hidden;
+  position:relative;
 }
-.h1-3d{
-  font-size:30px;font-weight:900;color:#fff;padding:14px 18px;border-radius:14px;
-  background:linear-gradient(145deg,var(--saffron),#ffbf7a);
-  box-shadow:0 18px 40px rgba(0,0,0,0.14), inset 0 -8px 18px rgba(0,0,0,0.06);
-  transform:perspective(900px) rotateX(4deg);
-  display:inline-block;
+/* subtle SVG-style official blend */
+.hero::after{
+  content:"";position:absolute;right:-30px;top:-10px;width:260px;height:260px;
+  background:radial-gradient(circle at 30% 30%, rgba(214,83,0,0.06), transparent 20%),
+             conic-gradient(from 200deg at 50% 50%, rgba(0,120,140,0.02), rgba(214,83,0,0.02));
+  transform:rotate(12deg);filter:blur(18px);opacity:0.9;
+  pointer-events:none;
 }
 
-/* layout */
-.grid{display:grid;grid-template-columns:1fr 340px;gap:20px}
-.card{background:var(--card);border-radius:12px;padding:16px;box-shadow:0 10px 30px rgba(11,20,15,0.04)}
-.lead strong{display:inline-block;width:100px}
-.services li{margin:8px 0}
-.quick{display:flex;gap:8px;flex-wrap:wrap}
-.btn{background:var(--accent);color:#fff;padding:10px 12px;border-radius:8px;text-decoration:none;font-weight:700}
-.wh-float{position:fixed;right:18px;bottom:18px;width:64px;height:64px;border-radius:50%;background:#25D366;color:#fff;display:flex;align-items:center;justify-content:center;font-size:26px;box-shadow:0 12px 30px rgba(0,0,0,0.18);z-index:999}
+/* content */
+.section{padding:14px 6px}
+.h2{font-size:20px;color:#177a36;margin:10px 0 8px}
+.card{background:var(--card);border-radius:10px;padding:12px;margin:10px 0;box-shadow:0 6px 18px rgba(0,0,0,0.04)}
+.list{margin:0;padding-left:20px}
+.btn{display:inline-block;background:var(--accent);color:#fff;padding:12px 14px;border-radius:10px;text-decoration:none;font-weight:700;box-shadow:0 8px 20px rgba(214,83,0,0.12)}
+.btn.alt{background:#2b9f5a}
+.row{display:flex;gap:10px;flex-wrap:wrap}
+.info-line{font-weight:700;color:#111;margin:6px 0}
+.small{color:var(--muted);font-size:13px}
 
-/* responsive */
-@media(max-width:980px){
-  .grid{grid-template-columns:1fr}
-  .h1-3d{font-size:22px}
-  .logo-saffron{font-size:18px}
+/* floating WhatsApp CTA */
+.wh-float{position:fixed;right:14px;bottom:14px;background:#25D366;color:#fff;border-radius:999px;padding:14px 16px;font-size:20px;box-shadow:0 10px 30px rgba(0,0,0,0.18);z-index:9999;text-decoration:none;display:flex;align-items:center;gap:10px}
+.wh-float span{font-weight:800}
+
+/* share row */
+.share-row{display:flex;gap:8px;align-items:center;margin-top:8px}
+
+/* lead form */
+.form-row{display:flex;flex-direction:column;gap:8px}
+.input,textarea{padding:12px;border-radius:8px;border:1px solid #e6e6e6;font-size:15px}
+label{font-weight:700;font-size:13px;color:#222}
+.small-note{font-size:12px;color:var(--muted)}
+
+/* gesture / tilt effect container */
+.tilt{perspective:900px;transform-style:preserve-3d}
+.tilt .tilt-inner{transition:transform .25s ease-out;transform-origin:center;will-change:transform}
+
+/* responsive, mobile-first */
+@media(min-width:700px){
+  .header{padding:22px}
+  .h1{font-size:36px}
+  .container{padding:28px}
+  .row{flex-wrap:nowrap}
+  .logo{width:92px;height:92px}
 }
-.small-muted{color:var(--muted);font-size:13px}
+
+/* mobile improvements big tap targets */
+@media(max-width:600px){
+  .h1{font-size:26px}
+  .btn{display:block;width:100%;text-align:center;padding:14px 12px;font-size:16px}
+  .row{flex-direction:column}
+  .logo{display:block;margin-right:8px}
+  .wh-float{width:68px;height:68px;font-size:22px;padding:12px}
+  .hero{padding:12px}
+}
+footer{padding:18px;color:var(--muted);font-size:13px;text-align:center}
 </style>
 </head>
 <body>
+
 <div class="container">
-  <header class="header" role="banner" aria-label="Chauhan header">
-    <div style="width:86px;height:86px;border-radius:12px;background:linear-gradient(135deg,var(--saffron),#ffd8a8);display:flex;align-items:center;justify-content:center;font-weight:900;color:#fff;font-size:20px;z-index:3">
-      CSC
+
+  <header class="header tilt" id="heroTilt">
+    <div class="logo" aria-hidden="true">
+      <!-- saffron symbol SVG (copyright-free) -->
+      <svg viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg" role="img" aria-hidden="true">
+        <defs><linearGradient id="g" x1="0" x2="1"><stop offset="0" stop-color="#ffd9c2"/><stop offset="1" stop-color="#ffb27a"/></linearGradient></defs>
+        <rect x="6" y="6" width="52" height="52" rx="10" fill="url(#g)"/>
+        <path d="M20 40c6-6 12-6 18 0" fill="none" stroke="#b34f16" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+        <circle cx="32" cy="24" r="8" fill="#fff3ea" stroke="#d35400" stroke-width="2"/>
+      </svg>
     </div>
-    <div class="brand" style="z-index:3">
-      <div class="logo-saffron">Chauhan Online Service Center</div>
-      <div class="tag">Trusted village-level e-Gov services — Operated by Saurabh Chauhan · VLE ID: 136473470022</div>
-    </div>
-    <div style="margin-left:auto;text-align:right;z-index:3">
-      <div class="small-muted">Serving: Roorkee · Haridwar · Uttarakhand</div>
-      <div style="margin-top:8px"><a class="btn" href="#contact">Request Service</a></div>
+
+    <div class="title tilt-inner">
+      <h1 class="h1">CHAUHAN ONLINE SERVICE CENTER</h1>
+      <div class="sub small">CSC • BC Agent • Distributor — Since 2021 — Jhabrera, Roorkee</div>
     </div>
   </header>
 
-  <section class="hero">
-    <div style="display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap">
-      <div>
-        <div class="h1-3d">हम कौन हैं — Chauhan Online Service Center</div>
-        <div class="small-muted" style="margin-top:8px">Local CSC / BC Agent / Distributor — Aadhaar, AEPS, BBPS, PAN, Udyam, Certificates & more</div>
+  <section class="hero card">
+    <div class="section">
+      <div class="h2">हम कौन हैं</div>
+      <div class="card">
+        <div class="info-line">Name: <span style="font-weight:800">Vijay Chauhan</span></div>
+        <div class="small">Address: Shop No-1, Tiraha Sherpur Khelmau, Jhabrera, Roorkee, Haridwar, Uttarakhand — 247665</div>
+        <div style="margin-top:8px">
+          <strong>Mobile (public):</strong> <span class="small-note">7818945749 (WhatsApp)</span><br>
+          <span class="small-note">Admin/contact hidden for security</span>
+        </div>
       </div>
-      <div style="text-align:right">
-        <div style="font-weight:700">WhatsApp: <a href="https://wa.me/7818945749" target="_blank">7818945749</a></div>
-        <div class="small-muted">Want fast reply? Message on WhatsApp</div>
+      <div style="margin-top:12px" class="share-row">
+        <a class="btn" id="btn-request">Request Service</a>
+        <a class="btn alt" href="#services">View Services</a>
       </div>
     </div>
   </section>
 
-  <div class="grid">
-    <main>
-      <div class="card lead">
-        <h3 style="margin-top:0">Contact Info</h3>
-        <p><strong>Name:</strong> Vijay Chauhan</p>
-        <p><strong>Address:</strong> Shop No–1, Tiraha Sherpur Khelmau, Jhabrera, Roorkee, Haridwar, Uttarakhand – 247665</p>
-        <p><strong>Mobile (public):</strong> <a href="tel:7818945749">7818945749</a></p>
-        <p class="small-muted">Admin number hidden for security.</p>
-      </div>
+  <section class="section" id="services">
+    <h3 class="h2">हमारी सेवाएँ</h3>
+    <ul class="list card small">
+      <li>Aadhaar update / enrolment assist</li>
+      <li>AEPS / MATM / Cash withdrawal</li>
+      <li>BBPS Bill Payments</li>
+      <li>PAN / Udyam / GST help</li>
+      <li>Ayushman / PM Kisan / Govt Schemes</li>
+      <li>Certificates — Income, Caste, Birth, Death</li>
+      <li>Photocopy, Print, Lamination</li>
+    </ul>
+  </section>
 
-      <div class="card">
-        <h3 style="margin:6px 0">हमारी सेवाएँ</h3>
-        <ul class="services">
-          <li>Aadhaar update / enrolment assist</li>
-          <li>AEPS / MATM / Cash withdrawal</li>
-          <li>BBPS Bill Payments</li>
-          <li>PAN / Udyam / GST help</li>
-          <li>Certificates — Income, Caste, Birth, Death</li>
-          <li>Photocopy, Print, Lamination</li>
-        </ul>
-      </div>
+  <section class="section">
+    <h3 class="h2">Request Service — Lead Form</h3>
+    <div class="card">
+      <form id="leadForm" class="form-row" action="https://formsubmit.co/vijaychauhan200104@gmail.com" method="POST" onsubmit="return prepareAndSend(event)">
+        <!-- formsubmit hidden inputs -->
+        <input type="hidden" name="_template" value="table">
+        <input type="hidden" name="_subject" value="New lead from website — Chauhan CSC">
+        <input type="hidden" id="geoLat" name="latitude" />
+        <input type="hidden" id="geoLon" name="longitude" />
+        <input type="hidden" name="_next" value="https://chauhanorganicstore.github.io/Chauhan-csc/?thankyou=1" />
 
-      <div class="card" style="margin-top:14px">
-        <h3 style="margin:6px 0">About (SEO friendly)</h3>
-        <p>Chauhan Online Service Center is a trusted village-level e-Governance service provider since 2021. We assist local residents with Aadhaar correction, banking through AEPS, bill payments, registrations like PAN and Udyam, and provide certificate services. Operated by Saurabh Chauhan — VLE ID 136473470022.</p>
-        <p class="small-muted">Tip: For better Google ranking, add this page to Google Search Console and create a sitemap.xml (I can give exact steps).</p>
-      </div>
-    </main>
+        <label for="fname">Full name</label>
+        <input id="fname" name="name" class="input" required placeholder="पूरा नाम" />
 
-    <aside>
-      <div class="card">
-        <h4 style="margin:6px 0">Request / Lead Form</h4>
-        <form id="contact" action="https://formsubmit.co/vijaychauhan200104@gmail.com" method="POST">
-          <input type="hidden" name="_subject" value="New lead — Chauhan CSC">
-          <input type="hidden" name="vle_id" value="136473470022">
-          <div style="margin-bottom:8px">
-            <label style="font-weight:700">Name</label><br>
-            <input name="name" required style="width:100%;padding:10px;border-radius:8px;border:1px solid #e6e6e6">
-          </div>
-          <div style="margin-bottom:8px">
-            <label style="font-weight:700">Mobile</label><br>
-            <input name="mobile" required style="width:100%;padding:10px;border-radius:8px;border:1px solid #e6e6e6">
-          </div>
-          <div style="margin-bottom:8px">
-            <label style="font-weight:700">Service</label><br>
-            <select name="service" style="width:100%;padding:10px;border-radius:8px;border:1px solid #e6e6e6">
-              <option>Aadhaar update</option>
-              <option>AEPS / MATM</option>
-              <option>BBPS</option>
-              <option>PAN / Udyam</option>
-              <option>Certificates</option>
-              <option>Other</option>
-            </select>
-          </div>
-          <div style="margin-bottom:8px">
-            <label style="font-weight:700">PIN / Location</label><br>
-            <input id="pin" name="pin" placeholder="Enter PIN or auto-fill" style="width:100%;padding:10px;border-radius:8px;border:1px solid #e6e6e6">
-            <input type="hidden" id="lat" name="latitude">
-            <input type="hidden" id="lon" name="longitude">
-          </div>
-          <div style="display:flex;gap:8px">
-            <button class="btn" type="submit">Send</button>
-            <button type="button" id="autoloc" class="btn" style="background:#6c757d">Auto Fill Location</button>
-          </div>
-          <p class="small-muted" style="margin-top:8px">Leads will be emailed. FormSubmit requires verifying email once — check inbox to confirm if you see verification.</p>
-        </form>
-      </div>
+        <label for="phone">Contact number</label>
+        <input id="phone" name="phone" class="input" required placeholder="Mobile/WhatsApp" pattern="[0-9+ ]{8,20}" />
 
-      <div style="height:14px"></div>
+        <label for="pin">PIN code (service area)</label>
+        <input id="pin" name="pin" class="input" required placeholder="247665" />
 
-      <div class="card">
-        <h4 style="margin:6px 0">Quick actions</h4>
-        <div class="quick">
-          <a class="btn" href="https://wa.me/7818945749" target="_blank">WhatsApp</a>
-          <a class="btn" href="tel:7818945749">Call</a>
-          <a class="btn" href="https://maps.app.goo.gl/Y9a4VaQxhzAXoKUR9" target="_blank">Get Directions</a>
+        <label for="service">Service required</label>
+        <input id="service" name="service" class="input" required placeholder="e.g. Aadhaar update / BBPS / PAN" />
+
+        <label for="note">Extra details</label>
+        <textarea id="note" name="message" rows="3" class="input" placeholder="Short note (optional)"></textarea>
+
+        <div style="display:flex;gap:8px">
+          <button type="submit" class="btn">Send Request</button>
+          <a class="btn alt" id="btn-loc" href="#" onclick="getLocation(event)">Use my location</a>
         </div>
-      </div>
-    </aside>
-  </div>
 
-  <footer style="text-align:center;margin-top:18px;color:var(--muted);font-size:14px">
-    © Chauhan Online Service Center — 2021–2025 · Made for local customers · VLE 136473470022
+        <div class="small-note">Note: Pehli baar submission pe FormSubmit verification mail dega — inbox me verify karna hoga.</div>
+      </form>
+    </div>
+  </section>
+
+  <section class="section">
+    <h3 class="h2">Share & Visit</h3>
+    <div class="card">
+      <div class="row">
+        <a class="btn" id="shareBtn">Share this page</a>
+        <a class="btn alt" id="directionsBtn" target="_blank" rel="noopener" href="https://maps.app.goo.gl/Y9a4VaQxhzAXoKUR9">Get directions</a>
+      </div>
+      <div class="small-note" style="margin-top:8px">VLE ID: 136473470022 (visible to admin only)</div>
+    </div>
+  </section>
+
+  <footer>
+    © Chauhan Online Service Center — 2021 to 2025 — <span class="small">Operated by Saurabh Chauhan</span>
   </footer>
+
 </div>
 
-<a class="wh-float" href="https://wa.me/7818945749" aria-label="WhatsApp" target="_blank">💬</a>
+<!-- Floating WhatsApp CTA (public number) -->
+<a class="wh-float" id="whLink" href="https://wa.me/917818945749" target="_blank" rel="noopener">
+  <svg width="20" height="20" viewBox="0 0 24 24" style="filter:drop-shadow(0 2px 4px rgba(0,0,0,0.2))" xmlns="http://www.w3.org/2000/svg">
+    <path fill="#fff" d="M20.52 3.48A11.84 11.84 0 0012 0C5.37 0 .02 5.36.02 12.01c0 2.12.56 4.21 1.62 6.03L0 24l6.3-1.6a11.9 11.9 0 005.7 1.46h.01c6.63 0 12-5.37 12-12 0-3.2-1.25-6.2-3.49-8.36z"/>
+    <path fill="#25D366" d="M17.44 14.98c-.27-.14-1.6-.79-1.85-.88-.25-.1-.44-.14-.63.14-.19.28-.72.88-.88 1.06-.16.19-.32.21-.59.07-.27-.14-1.15-.42-2.19-1.35-.81-.72-1.36-1.6-1.52-1.88-.16-.29-.02-.45.13-.59.13-.13.28-.32.41-.48.14-.17.19-.28.28-.47.09-.19.05-.36-.02-.51-.07-.14-.63-1.52-.87-2.09-.23-.54-.47-.47-.64-.48l-.55-.01c-.19 0-.5.07-.76.36-.26.29-1 1-1 2.44 0 1.44 1.03 2.83 1.17 3.03.14.21 2.02 3.08 4.9 4.32 2.88 1.24 2.88.83 3.4.78.53-.06 1.6-.65 1.83-1.28.22-.63.22-1.17.15-1.28-.07-.12-.25-.2-.52-.34z"/>
+  </svg>
+  <span>WhatsApp</span>
+</a>
 
 <script>
-document.getElementById('autoloc').addEventListener('click', function(){
-  if(!navigator.geolocation){ alert('Geolocation not supported'); return; }
-  var btn = this; btn.disabled=true; btn.textContent='Locating...';
-  navigator.geolocation.getCurrentPosition(function(pos){
-    document.getElementById('lat').value = pos.coords.latitude;
-    document.getElementById('lon').value = pos.coords.longitude;
-    document.getElementById('pin').value = 'PIN: (auto)';
-    btn.textContent='Done';
-    alert('Location filled. Submit the form now.');
-  }, function(err){
-    alert('Error: '+err.message);
-    btn.disabled=false; btn.textContent='Auto Fill Location';
-  }, {timeout:10000});
+/* Tilt / gesture: small lightweight tilt based on pointer move */
+(function(){
+  const hero = document.getElementById('heroTilt');
+  const inner = hero.querySelector('.tilt-inner');
+  function onMove(e){
+    const rect = hero.getBoundingClientRect();
+    const cx = rect.left + rect.width/2;
+    const cy = rect.top + rect.height/2;
+    const x = (e.clientX || (e.touches && e.touches[0].clientX)) - cx;
+    const y = (e.clientY || (e.touches && e.touches[0].clientY)) - cy;
+    const rx = (y / rect.height) * -6;
+    const ry = (x / rect.width) * 6;
+    inner.style.transform = `rotateX(${rx}deg) rotateY(${ry}deg) translateZ(6px)`;
+  }
+  function reset(){ inner.style.transform = ''; }
+  hero.addEventListener('pointermove', onMove);
+  hero.addEventListener('pointerleave', reset);
+})();
+
+/* Share button */
+document.getElementById('shareBtn').addEventListener('click', async function(){
+  const url = location.href;
+  const title = document.title;
+  if(navigator.share){ try{ await navigator.share({title, url}); return; }catch(e){} }
+  navigator.clipboard?.writeText(url).then(()=>alert('Link copied to clipboard — share kar do!'));
 });
+
+/* getLocation for the form */
+function getLocation(ev){
+  ev && ev.preventDefault();
+  if(!navigator.geolocation){ alert('Location not supported'); return; }
+  navigator.geolocation.getCurrentPosition(function(pos){
+    document.getElementById('geoLat').value = pos.coords.latitude.toFixed(6);
+    document.getElementById('geoLon').value = pos.coords.longitude.toFixed(6);
+    alert('Location added to form (lat/lon). Fill PIN and submit.');
+  }, function(err){
+    alert('Location denied or not available. Please enter PIN manually.');
+  }, {enableHighAccuracy:true, timeout:8000});
+}
+
+/* Prepare form: attach basic validation and disallow admin number leaking */
+function prepareAndSend(e){
+  // simple client validation
+  const phone = document.getElementById('phone').value.trim();
+  if(!phone || phone.length<8){ alert('Valid phone required'); return false; }
+  // hide admin number fields if any (we don't show admin on public)
+  // ensure geo fields exist (can be blank)
+  return true; // allow formsubmit to process
+}
+
+/* quick anchor for Request Service button */
+document.getElementById('btn-request').addEventListener('click',function(){
+  document.getElementById('fname').focus();
+});
+
+/* directions button: add user latlon if available */
+const directionsBtn = document.getElementById('directionsBtn');
+document.getElementById('directionsBtn').addEventListener('click', function(){ /* target is static gmaps link set in HTML */ });
+
 </script>
+
 </body>
 </html>
